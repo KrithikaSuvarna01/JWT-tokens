@@ -87,6 +87,7 @@ app.post("/login", async (req: Request, res: Response) => {
 app.get("/profile", validateToken, (req: Request, res: Response) => {
   res.json("Welcome to my profile");
 });
+
 /**
  * Start the Express server on the specified port.
  */
